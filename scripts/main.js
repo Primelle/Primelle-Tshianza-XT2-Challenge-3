@@ -9,11 +9,8 @@ var map = new mapboxgl.Map({
   zoom: 3
 });
 
-// url van openweather
-var openWeatherMapUrl = 'https://api.openweathermap.org/data/2.5/weather';
-
-// api key van openweather
-var openWeatherMapUrlApiKey = '6a719e3c4dfb752cbb9fe577d9c14591';
+var openWeatherMapUrl = 'https://api.openweathermap.org/data/2.5/weather'; // url van openweather
+var openWeatherMapUrlApiKey = '6a719e3c4dfb752cbb9fe577d9c14591';  // api key van openweather
 
 //alles binnen deze functie moet uitgevoerd worden zodra kaart geladen is
 map.on('load', function () {
@@ -133,7 +130,7 @@ function popupTekstMelding(){
 
 }
 
-// zoom in de rechterbenedenhoek
+// zoom controls in de rechterbenedenhoek
 var nav = new mapboxgl.NavigationControl();
 map.addControl(nav, 'bottom-right')
 
