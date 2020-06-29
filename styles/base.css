@@ -1,0 +1,141 @@
+@font-face{
+	font-family: GT Walsheim Pro Regular;
+ 	src: url(../fonts/GT-Walsheim-Pro-Regular.ttf);
+}
+
+@font-face{
+	font-family: GT Walsheim Pro Medium;
+ 	src: url(../fonts/GT-Walsheim-Pro-Medium.ttf);
+}
+
+@font-face{
+	font-family: GT Walsheim Pro Bold;
+ 	src: url(../fonts/GT-Walsheim-Pro-Bold.ttf);
+}
+
+body{
+	margin: 0;
+	background-color: #000000;
+	font-family: 'GT Walsheim Pro Regular';
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.5fr 6fr 0.5fr;
+	grid-template-areas: 
+		"header"
+		"main"
+		"footer";
+	grid-row-gap: 20px;
+}
+
+header{
+	grid-area: header;
+	background-color:rgba(21, 17, 29, 1);
+}
+
+main{
+	grid-area: main;
+}
+
+footer{
+	grid-area: footer;
+	background-color:rgba(21, 17, 29, 0.8);
+}
+
+figure{
+	display: flex;
+	justify-content: center;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+}
+
+#logo{
+	width: 60%;
+}
+
+
+#map {
+  height: 70vh;
+  width: 100vw;
+}
+
+footer , h1{
+	text-align: center;
+}
+
+h1, h2{
+	font-family: 'GT Walsheim Pro Medium';
+
+}
+h1{
+	font-size: 1.5em;
+}
+
+h2{ 	/*font opmaak van titel in pop up*/
+	font-size: 1.5em;
+}
+
+p{
+	font-size: 1.2em;
+	font-family: 'GT Walsheim Pro Regular';
+}
+
+.tekst{
+	color: #ffffff;		/*Kleur van h1 en p in de body*/
+}
+
+
+@media only screen and (min-width:650px) and (max-width:999px){
+
+	figure{
+		width:80%;
+	}
+
+	#logo{
+		width: 50%;
+	}
+
+}
+
+
+@media only screen and (min-width:650px){
+	
+
+	figure , #map{
+		
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#map{
+		width:80vw;
+	}
+
+
+	h1{
+		font-size: 1.8em;
+	}
+
+}
+
+
+
+@media only screen and (min-width:1000px){
+
+
+	figure{
+		max-width:650px;
+	}
+
+	#logo{
+		max-width: 50%;
+	}
+
+}
+
+
+
+
